@@ -1,6 +1,6 @@
 #include <Servo.h>
-const int maxAngle = 20;
-const float startAngle = 90;
+const int maxAngle = 15;
+const float startAngle =100;
 Servo servo1, servo2, servo3, servo4, servo5, servo6;  // create servo object to control a servo
 
 const int servoPin1 = 2;
@@ -10,7 +10,7 @@ const int servoPin4 = 5;
 const int servoPin5 = 6;
 const int servoPin6 = 7;
 int pos = 0;    
-float offSet = 30 * M_PI / 180; //the degree offset on each of the servos
+float offSet = 50 * M_PI / 180; //the degree offset on each of the servos
 int i;
 void setup() {
   Serial.begin(9600);
